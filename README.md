@@ -62,8 +62,8 @@ Ensure you have the following installed:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/fullstack-todo-app.git
-   cd fullstack-todo-app
+   git clone https://github.com/FaizanQureshi1220/FullStack-Todo-MERN-Application-with-DOCKER.git
+   cd FullStack-Todo-MERN-Application-with-DOCKER
    ```
 
 2. Build and start the containers:
@@ -79,8 +79,8 @@ Ensure you have the following installed:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/fullstack-todo-app.git
-   cd fullstack-todo-app
+   git clone https://github.com/FaizanQureshi1220/FullStack-Todo-MERN-Application-with-DOCKER.git
+   cd FullStack-Todo-MERN-Application-with-DOCKER
    ```
 
 2. Set up the backend:
@@ -111,27 +111,6 @@ PORT=5000
 MONGO_URI=mongodb://mongo:27017/todo-app
 JWT_SECRET=your_secret_key
 ```
-
-### Frontend `.env` example:
-```env
-VITE_API_URL=http://localhost:5000/api
-```
-
----
-
-## API Endpoints
-
-### Authentication
-- `POST /api/auth/signup`: Create a new user.
-- `POST /api/auth/login`: Login and receive a JWT.
-
-### Todos
-- `GET /api/todos`: Get all todos for the logged-in user.
-- `POST /api/todos`: Create a new todo.
-- `PUT /api/todos/:id`: Update a todo.
-- `DELETE /api/todos/:id`: Delete a todo.
-
----
 
 ## Docker Compose Configuration
 
@@ -168,33 +147,3 @@ volumes:
 ```
 
 ---
-
-## Screenshots
-
-Include screenshots of your application to showcase features (e.g., login screen, todo list, etc.).
-
----
-
-## Future Enhancements
-
-- Add a search and filter feature for todos.
-- Implement user roles (admin, user).
-- Add unit and integration tests.
-- Deploy the app to a cloud platform (e.g., AWS, Azure, or Heroku).
-
----
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
----
-
-## Contact
-
-For any questions or feedback, feel free to reach out:
-- **Email**: your-email@example.com
-- **GitHub**: [your-username](https://github.com/your-username)
-
----
-
