@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+
+  mongodb:
+    image: mongo:latest
+    container_name: todoMongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongoV:/data/db
+    restart: always
+
+  backend:
+    build: 
+      context: ./api
+    ports:
+      - "3002:3002"
+    environment:
+      - DATABASE_URL=mongodb://todoMongo:27017
+    depends_on:
+      - mongodb
+    restart: always
+
+  frontend:
+    build: 
+      context: ./web
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+    restart: always
+
+
+volumes:
+  mongoV:
